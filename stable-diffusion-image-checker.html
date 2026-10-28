@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Stable Diffusion Image Checker – Read the Prompt & Settings From AI Images | RealTell</title>
+<meta name="description" content="Check if an image was made with Stable Diffusion, ComfyUI, Automatic1111, Fooocus or NovelAI and see the embedded prompt and settings. Free, private, in-browser.">
+<meta property="og:title" content="Stable Diffusion Image Checker – Read the Prompt & Settings From AI Images">
+<meta property="og:description" content="Check if an image was made with Stable Diffusion, ComfyUI, Automatic1111, Fooocus or NovelAI and see the embedded prompt and settings. Free, private, in-browser.">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='9' fill='%234338ca'/%3E%3Ccircle cx='16' cy='16' r='7' fill='none' stroke='white' stroke-width='3'/%3E%3Ccircle cx='16' cy='16' r='2.5' fill='white'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="realtell.css">
+
+<!-- ===== Google AdSense: paste your AdSense <script> here after approval ===== -->
+
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Can I see the prompt of any AI image?", "acceptedAnswer": {"@type": "Answer", "text": "Only if the tool saved it and it hasn't been removed. ChatGPT, Midjourney and most online generators don't embed the full prompt."}}, {"@type": "Question", "name": "Does it work with SDXL and FLUX images?", "acceptedAnswer": {"@type": "Answer", "text": "Yes, as long as the interface you used saved its metadata in one of the supported formats."}}, {"@type": "Question", "name": "Are my images uploaded?", "acceptedAnswer": {"@type": "Answer", "text": "No. Everything is processed locally in your browser."}}]}</script>
+</head>
+<body>
+<header class="top">
+  <div class="wrap nav">
+    <a class="logo" href="index.html"><i><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.6"><circle cx="12" cy="12" r="8"/><circle cx="12" cy="12" r="2.5" fill="#fff"/></svg></i>RealTell</a>
+    <nav><a href="index.html">AI Detector</a><a href="guides.html">Guides</a><a href="about.html">About</a></nav>
+  </div>
+</header>
+<main class="wrap">
+  <div class="crumbs"><a href="index.html">Home</a> › <a href="index.html">AI Detector</a> › Stable Diffusion Image Checker &amp; Prompt Reader</div>
+  <article class="guide">
+    
+    <h1>Stable Diffusion Image Checker &amp; Prompt Reader</h1>
+    <p class="lede">Many Stable Diffusion tools save the prompt, model and settings inside the image file. Drop a PNG or JPG below to find out if it was generated with Stable Diffusion – and see the data it contains.</p>
+    <div class="card" style="margin-top:18px">
+    <div class="drop" id="drop" tabindex="0" role="button" aria-label="Choose image or video files">
+      <svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="#4338ca" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/><path d="M8.5 11h5M11 8.5v5"/></svg>
+      <strong>Drop an image to read its Stable Diffusion data</strong>
+      <span>JPG, PNG, WebP, HEIC, AVIF, MP4, MOV · files never leave your device</span>
+      <input type="file" id="file" accept="image/*,video/*,.heic,.heif,.avif,.mov,.mp4" multiple hidden>
+    </div>
+    <div id="results"></div>
+  </div>
+    
+    <div class="ad">Advertisement</div>
+    
+<h2>What RealTell can read</h2>
+<p>Popular Stable Diffusion interfaces write generation details into the images they save. RealTell recognises:</p>
+<ul>
+<li><b>Automatic1111, Forge and Fooocus</b> – the prompt, negative prompt, sampler, steps, CFG scale, seed and model.</li>
+<li><b>ComfyUI</b> – the full node workflow used to create the image.</li>
+<li><b>InvokeAI</b> and <b>NovelAI</b> – their own generation metadata formats.</li>
+</ul>
+<p>Open <b>“Show file details”</b> on the result to see the stored text. This is also a handy way to recover a prompt from one of your own images.</p>
+
+<h2>Why some Stable Diffusion images show nothing</h2>
+<p>The settings are usually stored in PNG text fields. Converting the image to JPG or WebP, uploading it to most websites, or saving it from a chat app removes them. Some apps also offer an option to save images without metadata.</p>
+
+<h2>Privacy tip for creators</h2>
+<p>If you share your own AI images, remember that the embedded prompt and settings travel with the file. If you'd rather keep your prompt private, export a copy without metadata before posting – and if you want people to know the image is AI-made, say so in the caption.</p>
+
+    
+    <h2>Frequently asked questions</h2>
+    <h3>Can I see the prompt of any AI image?</h3><p>Only if the tool saved it and it hasn't been removed. ChatGPT, Midjourney and most online generators don't embed the full prompt.</p><h3>Does it work with SDXL and FLUX images?</h3><p>Yes, as long as the interface you used saved its metadata in one of the supported formats.</p><h3>Are my images uploaded?</h3><p>No. Everything is processed locally in your browser.</p>
+  </article>
+  <div class="ad">Advertisement</div>
+  <h2 style="font-size:20px;margin:30px 0 4px">Related</h2>
+  <div class="related"><a href="midjourney-image-checker.html">Midjourney Image Checker<span>Check an image for Midjourney metadata and learn why Midjourney images are harder to detect…</span></a><a href="how-to-tell-if-a-photo-is-ai.html">How to Tell if a Photo Is AI-Generated: 10 Practical Checks<span>A practical guide to telling whether a photo was made with AI: metadata checks, reverse image…</span></a><a href="what-are-content-credentials.html">What Are Content Credentials (C2PA)? A Plain-English Guide<span>Content Credentials (C2PA) explained simply: what they are, which AI tools and cameras use…</span></a></div>
+</main>
+<footer>
+  <div class="wrap">
+    <span>© <span id="yr"></span> RealTell · All checks run locally in your browser.</span>
+    <span><a href="guides.html">Guides</a> · <a href="about.html">About</a> · <a href="contact.html">Contact</a> · <a href="privacy.html">Privacy</a> · <a href="terms.html">Terms</a></span>
+  </div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/exifr@7.1.3/dist/full.umd.js"></script>
+<script src="realtell.js"></script>
+</body>
+</html>

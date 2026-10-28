@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Midjourney Image Checker – Can You Tell if an Image Is From Midjourney? | RealTell</title>
+<meta name="description" content="Check an image for Midjourney metadata and learn why Midjourney images are harder to detect than ChatGPT or Firefly images. Free, private image checker.">
+<meta property="og:title" content="Midjourney Image Checker – Can You Tell if an Image Is From Midjourney?">
+<meta property="og:description" content="Check an image for Midjourney metadata and learn why Midjourney images are harder to detect than ChatGPT or Firefly images. Free, private image checker.">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='9' fill='%234338ca'/%3E%3Ccircle cx='16' cy='16' r='7' fill='none' stroke='white' stroke-width='3'/%3E%3Ccircle cx='16' cy='16' r='2.5' fill='white'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="realtell.css">
+
+<!-- ===== Google AdSense: paste your AdSense <script> here after approval ===== -->
+
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Does Midjourney add a watermark?", "acceptedAnswer": {"@type": "Answer", "text": "Midjourney does not add Content Credentials. Some downloads include an unsigned metadata tag, which RealTell will detect if it is still present."}}, {"@type": "Question", "name": "Why did my Midjourney image show \u201cNo AI labels found\u201d?", "acceptedAnswer": {"@type": "Answer", "text": "Its metadata was missing \u2013 either Midjourney didn't include a tag or it was removed when the file was shared or edited."}}, {"@type": "Question", "name": "What is the most reliable way to check?", "acceptedAnswer": {"@type": "Answer", "text": "Combine a metadata check, a reverse image search and a careful look at the details. No single method is perfect."}}]}</script>
+</head>
+<body>
+<header class="top">
+  <div class="wrap nav">
+    <a class="logo" href="index.html"><i><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.6"><circle cx="12" cy="12" r="8"/><circle cx="12" cy="12" r="2.5" fill="#fff"/></svg></i>RealTell</a>
+    <nav><a href="index.html">AI Detector</a><a href="guides.html">Guides</a><a href="about.html">About</a></nav>
+  </div>
+</header>
+<main class="wrap">
+  <div class="crumbs"><a href="index.html">Home</a> › <a href="index.html">AI Detector</a> › Midjourney Image Checker</div>
+  <article class="guide">
+    
+    <h1>Midjourney Image Checker</h1>
+    <p class="lede">Midjourney is one of the most popular AI image generators – and one of the hardest to detect from metadata. Drop an image below to check for any Midjourney or AI labels, then read what the result really means.</p>
+    <div class="card" style="margin-top:18px">
+    <div class="drop" id="drop" tabindex="0" role="button" aria-label="Choose image or video files">
+      <svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="#4338ca" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/><path d="M8.5 11h5M11 8.5v5"/></svg>
+      <strong>Drop an image to check for Midjourney labels</strong>
+      <span>JPG, PNG, WebP, HEIC, AVIF, MP4, MOV · files never leave your device</span>
+      <input type="file" id="file" accept="image/*,video/*,.heic,.heif,.avif,.mov,.mp4" multiple hidden>
+    </div>
+    <div id="results"></div>
+  </div>
+    
+    <div class="ad">Advertisement</div>
+    
+<h2>Why Midjourney images are harder to detect</h2>
+<p>Unlike ChatGPT, Adobe Firefly and Google Gemini, Midjourney does not attach signed <a href="what-are-content-credentials.html">Content Credentials</a> to its images. Some Midjourney downloads carry an unsigned IPTC metadata tag identifying them as AI-generated, or text mentioning Midjourney. When RealTell finds those, it reports <b>“Likely AI-generated”</b>.</p>
+<p>Because these tags are unsigned and are removed by most apps, many Midjourney images you find online will carry no label at all. For those, the honest result is “No AI labels found” – which does <b>not</b> mean the image is real.</p>
+
+<h2>How to judge a suspected Midjourney image</h2>
+<ol>
+<li><b>Reverse image search it</b> with Google Lens or TinEye. Midjourney images are often posted first in AI art communities or on Midjourney's own gallery pages.</li>
+<li><b>Look for the Midjourney style.</b> Dramatic cinematic lighting, extremely polished skin, painterly depth of field and a “too perfect” composition are common.</li>
+<li><b>Zoom into details.</b> Jewellery, fingers, background text, fences, stair railings and reflections often contain small errors.</li>
+<li><b>Check the aspect ratio.</b> Midjourney frequently outputs sizes like 1456 × 816 or 816 × 1456 – a hint, not proof.</li>
+</ol>
+<div class="callout">Pixel-based “AI detectors” that claim to recognise Midjourney can be useful as a second opinion, but they regularly mislabel real photos too. Read <a href="why-ai-detectors-get-it-wrong.html">why AI detectors get it wrong</a> before relying on one.</div>
+
+    
+    <h2>Frequently asked questions</h2>
+    <h3>Does Midjourney add a watermark?</h3><p>Midjourney does not add Content Credentials. Some downloads include an unsigned metadata tag, which RealTell will detect if it is still present.</p><h3>Why did my Midjourney image show “No AI labels found”?</h3><p>Its metadata was missing – either Midjourney didn't include a tag or it was removed when the file was shared or edited.</p><h3>What is the most reliable way to check?</h3><p>Combine a metadata check, a reverse image search and a careful look at the details. No single method is perfect.</p>
+  </article>
+  <div class="ad">Advertisement</div>
+  <h2 style="font-size:20px;margin:30px 0 4px">Related</h2>
+  <div class="related"><a href="how-to-tell-if-a-photo-is-ai.html">How to Tell if a Photo Is AI-Generated: 10 Practical Checks<span>A practical guide to telling whether a photo was made with AI: metadata checks, reverse image…</span></a><a href="why-ai-detectors-get-it-wrong.html">Why AI Image Detectors Get It Wrong<span>AI image detectors often flag real photos as fake. Learn why false positives happen, how…</span></a><a href="stable-diffusion-image-checker.html">Stable Diffusion Image Checker &amp; Prompt Reader<span>Check if an image was made with Stable Diffusion, ComfyUI, Automatic1111, Fooocus or NovelAI…</span></a></div>
+</main>
+<footer>
+  <div class="wrap">
+    <span>© <span id="yr"></span> RealTell · All checks run locally in your browser.</span>
+    <span><a href="guides.html">Guides</a> · <a href="about.html">About</a> · <a href="contact.html">Contact</a> · <a href="privacy.html">Privacy</a> · <a href="terms.html">Terms</a></span>
+  </div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/exifr@7.1.3/dist/full.umd.js"></script>
+<script src="realtell.js"></script>
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ChatGPT Image Detector – Check if an Image Was Made With ChatGPT | RealTell</title>
+<meta name="description" content="Free ChatGPT image detector. Find out if a picture was created with ChatGPT, DALL-E or the OpenAI image API by reading its Content Credentials. Private – nothing is uploaded.">
+<meta property="og:title" content="ChatGPT Image Detector – Check if an Image Was Made With ChatGPT">
+<meta property="og:description" content="Free ChatGPT image detector. Find out if a picture was created with ChatGPT, DALL-E or the OpenAI image API by reading its Content Credentials. Private – nothing is uploaded.">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='9' fill='%234338ca'/%3E%3Ccircle cx='16' cy='16' r='7' fill='none' stroke='white' stroke-width='3'/%3E%3Ccircle cx='16' cy='16' r='2.5' fill='white'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="realtell.css">
+
+<!-- ===== Google AdSense: paste your AdSense <script> here after approval ===== -->
+
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Can RealTell detect every ChatGPT image?", "acceptedAnswer": {"@type": "Answer", "text": "Only images that still contain OpenAI's Content Credentials. If the label was removed \u2013 for example by a screenshot or a social media upload \u2013 no metadata-based tool can see it."}}, {"@type": "Question", "name": "Does this work for DALL-E 3 images?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. DALL-E images created through ChatGPT or the OpenAI API carry the same kind of Content Credentials label."}}, {"@type": "Question", "name": "Is my image uploaded to check it?", "acceptedAnswer": {"@type": "Answer", "text": "No. RealTell analyses the file inside your browser. It never leaves your device."}}]}</script>
+</head>
+<body>
+<header class="top">
+  <div class="wrap nav">
+    <a class="logo" href="index.html"><i><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.6"><circle cx="12" cy="12" r="8"/><circle cx="12" cy="12" r="2.5" fill="#fff"/></svg></i>RealTell</a>
+    <nav><a href="index.html">AI Detector</a><a href="guides.html">Guides</a><a href="about.html">About</a></nav>
+  </div>
+</header>
+<main class="wrap">
+  <div class="crumbs"><a href="index.html">Home</a> › <a href="index.html">AI Detector</a> › ChatGPT Image Detector</div>
+  <article class="guide">
+    
+    <h1>ChatGPT Image Detector</h1>
+    <p class="lede">Find out whether a picture was created with ChatGPT, DALL-E or the OpenAI image API. Drop the file below – RealTell reads the hidden Content Credentials that OpenAI attaches to the images it generates.</p>
+    <div class="card" style="margin-top:18px">
+    <div class="drop" id="drop" tabindex="0" role="button" aria-label="Choose image or video files">
+      <svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="#4338ca" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/><path d="M8.5 11h5M11 8.5v5"/></svg>
+      <strong>Drop an image to check if it came from ChatGPT</strong>
+      <span>JPG, PNG, WebP, HEIC, AVIF, MP4, MOV · files never leave your device</span>
+      <input type="file" id="file" accept="image/*,video/*,.heic,.heif,.avif,.mov,.mp4" multiple hidden>
+    </div>
+    <div id="results"></div>
+  </div>
+    
+    <div class="ad">Advertisement</div>
+    
+<h2>How to check if an image was made with ChatGPT</h2>
+<ol>
+<li><b>Get the original file.</b> Ask the sender for the file itself, or download it directly from where it was first posted. Avoid screenshots.</li>
+<li><b>Drop it into the checker above.</b> The analysis runs in your browser in about a second.</li>
+<li><b>Read the verdict and the evidence.</b> If OpenAI's label is present you will see “AI-generated” with ChatGPT or OpenAI named as the source.</li>
+<li><b>Confirm the signature (optional).</b> Use the “Verify credentials officially” link on the result to check the digital signature with the Content Credentials verifier.</li>
+</ol>
+
+<h2>Why ChatGPT images can be detected</h2>
+<p>OpenAI attaches <a href="what-are-content-credentials.html">Content Credentials</a> – a label based on the open C2PA standard – to images created with ChatGPT and its image API. The label is stored inside the file and states that the image was produced by an AI model, which tool produced it and when. Because the label is cryptographically signed, it is difficult to forge.</p>
+<p>OpenAI has also said it adds an invisible watermark to its images. RealTell does not read invisible watermarks; it reads the Content Credentials label, which is the part stored openly in the file.</p>
+
+<h2>When the checker can't tell</h2>
+<p>The label lives in the file's metadata, and metadata is easy to lose. You will usually see “No AI labels found” when:</p>
+<ul>
+<li>someone took a <b>screenshot</b> of the image instead of saving it;</li>
+<li>the image was sent through <b>WhatsApp, Instagram, Facebook, X</b> or other apps that strip metadata;</li>
+<li>it was edited and exported in a program that doesn't preserve Content Credentials;</li>
+<li>it was cropped or converted with an online tool.</li>
+</ul>
+<p>In those cases the absence of a label tells you nothing. Look for <a href="how-to-tell-if-a-photo-is-ai.html">visual signs of AI generation</a> and run a reverse image search to find the earliest copy.</p>
+
+<h2>Spotting ChatGPT images by eye</h2>
+<p>ChatGPT's image generation is very good, so visual checks are hints, not proof. Things worth a second look include text that is almost-but-not-quite correct on signs and packaging, overly clean and evenly lit scenes, repeated patterns in backgrounds, and small objects that merge into each other. Default output sizes such as 1024 × 1024, 1024 × 1536 and 1536 × 1024 are also common.</p>
+
+    
+    <h2>Frequently asked questions</h2>
+    <h3>Can RealTell detect every ChatGPT image?</h3><p>Only images that still contain OpenAI's Content Credentials. If the label was removed – for example by a screenshot or a social media upload – no metadata-based tool can see it.</p><h3>Does this work for DALL-E 3 images?</h3><p>Yes. DALL-E images created through ChatGPT or the OpenAI API carry the same kind of Content Credentials label.</p><h3>Is my image uploaded to check it?</h3><p>No. RealTell analyses the file inside your browser. It never leaves your device.</p>
+  </article>
+  <div class="ad">Advertisement</div>
+  <h2 style="font-size:20px;margin:30px 0 4px">Related</h2>
+  <div class="related"><a href="sora-video-detector.html">Sora Video Detector<span>Free Sora video detector. Check whether a video was generated with OpenAI Sora by reading its…</span></a><a href="what-are-content-credentials.html">What Are Content Credentials (C2PA)? A Plain-English Guide<span>Content Credentials (C2PA) explained simply: what they are, which AI tools and cameras use…</span></a><a href="why-ai-detectors-get-it-wrong.html">Why AI Image Detectors Get It Wrong<span>AI image detectors often flag real photos as fake. Learn why false positives happen, how…</span></a></div>
+</main>
+<footer>
+  <div class="wrap">
+    <span>© <span id="yr"></span> RealTell · All checks run locally in your browser.</span>
+    <span><a href="guides.html">Guides</a> · <a href="about.html">About</a> · <a href="contact.html">Contact</a> · <a href="privacy.html">Privacy</a> · <a href="terms.html">Terms</a></span>
+  </div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/exifr@7.1.3/dist/full.umd.js"></script>
+<script src="realtell.js"></script>
+</body>
+</html>

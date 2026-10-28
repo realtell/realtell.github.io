@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Adobe Firefly & Generative Fill Detector – Check Photos for Adobe AI | RealTell</title>
+<meta name="description" content="Check whether an image was created with Adobe Firefly or edited with Photoshop Generative Fill. RealTell reads Adobe Content Credentials. Free and private.">
+<meta property="og:title" content="Adobe Firefly & Generative Fill Detector – Check Photos for Adobe AI">
+<meta property="og:description" content="Check whether an image was created with Adobe Firefly or edited with Photoshop Generative Fill. RealTell reads Adobe Content Credentials. Free and private.">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='9' fill='%234338ca'/%3E%3Ccircle cx='16' cy='16' r='7' fill='none' stroke='white' stroke-width='3'/%3E%3Ccircle cx='16' cy='16' r='2.5' fill='white'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="realtell.css">
+
+<!-- ===== Google AdSense: paste your AdSense <script> here after approval ===== -->
+
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Can RealTell show which part of the photo was edited?", "acceptedAnswer": {"@type": "Answer", "text": "No. It reads what the label says about the file as a whole. The official Content Credentials verifier can show more detail about the edit history."}}, {"@type": "Question", "name": "Does Lightroom AI editing show up?", "acceptedAnswer": {"@type": "Answer", "text": "If the export includes Content Credentials that declare AI use, RealTell will report it. Ordinary exports without credentials will show camera data only."}}, {"@type": "Question", "name": "Is the check private?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Files are analysed inside your browser and never uploaded."}}]}</script>
+</head>
+<body>
+<header class="top">
+  <div class="wrap nav">
+    <a class="logo" href="index.html"><i><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.6"><circle cx="12" cy="12" r="8"/><circle cx="12" cy="12" r="2.5" fill="#fff"/></svg></i>RealTell</a>
+    <nav><a href="index.html">AI Detector</a><a href="guides.html">Guides</a><a href="about.html">About</a></nav>
+  </div>
+</header>
+<main class="wrap">
+  <div class="crumbs"><a href="index.html">Home</a> › <a href="index.html">AI Detector</a> › Adobe Firefly &amp; Generative Fill Detector</div>
+  <article class="guide">
+    
+    <h1>Adobe Firefly &amp; Generative Fill Detector</h1>
+    <p class="lede">Find out whether an image was created with Adobe Firefly or retouched with Photoshop's Generative Fill. Adobe attaches Content Credentials to AI output, and RealTell reads them in your browser.</p>
+    <div class="card" style="margin-top:18px">
+    <div class="drop" id="drop" tabindex="0" role="button" aria-label="Choose image or video files">
+      <svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="#4338ca" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/><path d="M8.5 11h5M11 8.5v5"/></svg>
+      <strong>Drop an image to check for Adobe Firefly or Generative Fill</strong>
+      <span>JPG, PNG, WebP, HEIC, AVIF, MP4, MOV · files never leave your device</span>
+      <input type="file" id="file" accept="image/*,video/*,.heic,.heif,.avif,.mov,.mp4" multiple hidden>
+    </div>
+    <div id="results"></div>
+  </div>
+    
+    <div class="ad">Advertisement</div>
+    
+<h2>How Adobe labels AI content</h2>
+<p>Adobe was one of the founders of the Content Authenticity Initiative, and Firefly adds <a href="what-are-content-credentials.html">Content Credentials</a> to the images it generates. The same applies to AI features inside Adobe apps, such as Generative Fill and Generative Expand in Photoshop.</p>
+
+<h2>AI-generated vs. AI-edited</h2>
+<p>RealTell separates two very different situations:</p>
+<ul>
+<li><b>AI-generated</b> – the whole image was created by Firefly from a text prompt.</li>
+<li><b>AI-edited</b> – a real photo where part of the picture was added, removed or extended with Generative Fill. The rest of the image may be a genuine photograph.</li>
+</ul>
+<p>This distinction matters. A product photo with a cleaned-up background is very different from a completely invented scene, and the evidence list on your result shows which one the label describes.</p>
+
+<h2>When the label disappears</h2>
+<p>Adobe preserves Content Credentials through its own editing pipeline, but other apps may not. Exporting through a non-supporting program, screenshotting, or posting to most social networks can remove the label. If that happens, RealTell will show “No AI labels found”.</p>
+
+    
+    <h2>Frequently asked questions</h2>
+    <h3>Can RealTell show which part of the photo was edited?</h3><p>No. It reads what the label says about the file as a whole. The official Content Credentials verifier can show more detail about the edit history.</p><h3>Does Lightroom AI editing show up?</h3><p>If the export includes Content Credentials that declare AI use, RealTell will report it. Ordinary exports without credentials will show camera data only.</p><h3>Is the check private?</h3><p>Yes. Files are analysed inside your browser and never uploaded.</p>
+  </article>
+  <div class="ad">Advertisement</div>
+  <h2 style="font-size:20px;margin:30px 0 4px">Related</h2>
+  <div class="related"><a href="what-are-content-credentials.html">What Are Content Credentials (C2PA)? A Plain-English Guide<span>Content Credentials (C2PA) explained simply: what they are, which AI tools and cameras use…</span></a><a href="gemini-image-detector.html">Gemini &amp; Imagen Image Detector<span>Check if a picture was created with Google Gemini or Imagen. RealTell reads the Content…</span></a><a href="how-to-tell-if-a-photo-is-ai.html">How to Tell if a Photo Is AI-Generated: 10 Practical Checks<span>A practical guide to telling whether a photo was made with AI: metadata checks, reverse image…</span></a></div>
+</main>
+<footer>
+  <div class="wrap">
+    <span>© <span id="yr"></span> RealTell · All checks run locally in your browser.</span>
+    <span><a href="guides.html">Guides</a> · <a href="about.html">About</a> · <a href="contact.html">Contact</a> · <a href="privacy.html">Privacy</a> · <a href="terms.html">Terms</a></span>
+  </div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/exifr@7.1.3/dist/full.umd.js"></script>
+<script src="realtell.js"></script>
+</body>
+</html>
