@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://realtell.github.io/sitemap.xml
